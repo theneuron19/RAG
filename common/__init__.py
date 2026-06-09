@@ -12,7 +12,7 @@ from .ingestion import (
     chunk_text, load_pdfs, load_pdf_text,
     extract_sections, parse_metadata_block,
 )
-from .retrieval import embed, embed_texts, retrieve, retrieve_keyword, retrieve_hybrid, build_filter
+from .retrieval import embed, embed_texts, retrieve, retrieve_keyword, retrieve_hybrid, retrieve_with_rerank, retrieve_parents, build_filter
 from .generation import (
     answer, answer_with_refusal, condense_query,
     parse_citations, verify_citation, verify_all, format_context,
