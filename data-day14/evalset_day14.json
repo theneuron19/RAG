@@ -1,0 +1,145 @@
+{
+  "description": "Day 14 evaluation set for the 30-day RAG challenge. 20 questions over the combined Day 12 (quarterly reports) and Day 13 (corporate documents) corpora. Each item has the question, the source document(s) a correct retrieval must surface (doc-level ground truth), a reference answer for generation scoring, and a tag: 'factual' (answer lives in one current document) or 'history' (answer requires superseded versions).",
+  "items": [
+    {
+      "id": "q01",
+      "question": "How much did NorthPeak's revenue grow in Q2 2026, and what was the revenue figure?",
+      "expected_sources": ["northpeak_q2_2026.pdf"],
+      "reference_answer": "NorthPeak's revenue grew 3.4% over the previous quarter in Q2 2026, reaching $426 million, at the upper end of guidance.",
+      "tag": "factual"
+    },
+    {
+      "id": "q02",
+      "question": "What primarily drove NorthPeak's revenue growth in Q1 2026?",
+      "expected_sources": ["northpeak_q1_2026.pdf"],
+      "reference_answer": "Growth in Q1 2026 was driven primarily by the cross-border freight segment, which expanded 6.8% as new trade lanes between Toronto and Chicago came online.",
+      "tag": "factual"
+    },
+    {
+      "id": "q03",
+      "question": "What dividend did NorthPeak's board approve, and when is it payable?",
+      "expected_sources": ["northpeak_q2_2026.pdf"],
+      "reference_answer": "The board approved a quarterly dividend of $0.18 per share, a 12% increase, payable in August.",
+      "tag": "factual"
+    },
+    {
+      "id": "q04",
+      "question": "Why did NorthPeak's gross margin improve in the second quarter of 2026?",
+      "expected_sources": ["northpeak_q2_2026.pdf"],
+      "reference_answer": "Gross margin recovered by 60 basis points because the fleet maintenance program concluded ahead of schedule and fuel surcharge mechanisms caught up with diesel prices.",
+      "tag": "factual"
+    },
+    {
+      "id": "q05",
+      "question": "What fleet-related issue affected NorthPeak's margins in Q1 2026?",
+      "expected_sources": ["northpeak_q1_2026.pdf"],
+      "reference_answer": "A one-time fleet maintenance program affecting roughly 9% of the trailer fleet, together with higher fuel costs, compressed gross margin by 40 basis points.",
+      "tag": "factual"
+    },
+    {
+      "id": "q06",
+      "question": "What is NorthPeak's revenue growth guidance for Q3 2026?",
+      "expected_sources": ["northpeak_q2_2026.pdf"],
+      "reference_answer": "Management guided to revenue growth of 2% to 3% for the next quarter, with same-day expansion partially offset by expected softness in industrial freight volumes.",
+      "tag": "factual"
+    },
+    {
+      "id": "q07",
+      "question": "Why did BlueHarbor's gross margin decline in Q2 2026?",
+      "expected_sources": ["blueharbor_q2_2026.pdf"],
+      "reference_answer": "Gross margin compressed by 90 basis points due to promotional intensity in apparel and higher last-mile delivery costs; management attributed the decline primarily to markdowns taken to clear spring apparel inventory.",
+      "tag": "factual"
+    },
+    {
+      "id": "q08",
+      "question": "What share of BlueHarbor's revenue comes from e-commerce?",
+      "expected_sources": ["blueharbor_q2_2026.pdf"],
+      "reference_answer": "E-commerce represents 31% of BlueHarbor's total revenue, up from 27% a year ago.",
+      "tag": "factual"
+    },
+    {
+      "id": "q09",
+      "question": "What is BlueHarbor's most significant risk for next quarter?",
+      "expected_sources": ["blueharbor_q2_2026.pdf"],
+      "reference_answer": "Inventory risk in apparel: a failure of the fall assortment reset would likely require markdowns exceeding those taken this quarter.",
+      "tag": "factual"
+    },
+    {
+      "id": "q10",
+      "question": "How many drivers does NorthPeak need to hire for the same-day delivery expansion, and over what period?",
+      "expected_sources": ["northpeak_q2_2026.pdf"],
+      "reference_answer": "Approximately 400 drivers across five markets in under ninety days.",
+      "tag": "factual"
+    },
+    {
+      "id": "q11",
+      "question": "How many days per week are employees currently required to be in the office?",
+      "expected_sources": ["remote_work_policy_v3.pdf"],
+      "reference_answer": "A minimum of two (2) days per week under Remote Work Policy v3.0, with Wednesday as the single company-wide anchor day and the second day chosen at team level.",
+      "tag": "factual"
+    },
+    {
+      "id": "q12",
+      "question": "What is the current home office equipment allowance?",
+      "expected_sources": ["remote_work_policy_v3.pdf"],
+      "reference_answer": "A renewed allowance of $400 every three years, available to all hybrid and remote employees.",
+      "tag": "factual"
+    },
+    {
+      "id": "q13",
+      "question": "What is the current daily meal reimbursement limit during business travel?",
+      "expected_sources": ["expense_policy_v2.pdf"],
+      "reference_answer": "Up to $75 per person per day, with itemized receipts required for any meal above $40, under Travel & Expense Policy v2.0.",
+      "tag": "factual"
+    },
+    {
+      "id": "q14",
+      "question": "What expense amount currently requires VP approval?",
+      "expected_sources": ["expense_policy_v2.pdf"],
+      "reference_answer": "Expenses above $7,500 require VP approval and a pre-trip authorization form under the current policy.",
+      "tag": "factual"
+    },
+    {
+      "id": "q15",
+      "question": "Under the current policy, when can premium economy be booked?",
+      "expected_sources": ["expense_policy_v2.pdf"],
+      "reference_answer": "For flights exceeding five hours, without additional approval.",
+      "tag": "factual"
+    },
+    {
+      "id": "q16",
+      "question": "By what date must employees enroll a security key or passkey?",
+      "expected_sources": ["security_memo_2026.pdf"],
+      "reference_answer": "Before May 15, 2026, ahead of the June 1, 2026 deadline when phishing-resistant MFA becomes mandatory.",
+      "tag": "factual"
+    },
+    {
+      "id": "q17",
+      "question": "Which MFA methods are being disabled, and when?",
+      "expected_sources": ["security_memo_2026.pdf"],
+      "reference_answer": "SMS and voice one-time codes will be disabled on June 1, 2026.",
+      "tag": "factual"
+    },
+    {
+      "id": "q18",
+      "question": "Who is exempt from individual MFA enrollment?",
+      "expected_sources": ["security_memo_2026.pdf"],
+      "reference_answer": "Shared workstation roles in manufacturing, which will use badge-tap authentication instead.",
+      "tag": "factual"
+    },
+    {
+      "id": "q19",
+      "question": "How does the ingestion pipeline decide which version of a document is the latest?",
+      "expected_sources": ["ingestion_pipeline_spec.pdf"],
+      "reference_answer": "The pipeline groups documents by title, sorts by version, and sets isLatest=true only on the highest version of each title; superseded documents remain searchable for audit but are excluded from default retrieval.",
+      "tag": "factual"
+    },
+    {
+      "id": "q20",
+      "question": "How did the office attendance requirement change across all versions of the Remote Work Policy?",
+      "expected_sources": ["remote_work_policy_v1.pdf", "remote_work_policy_v2.pdf", "remote_work_policy_v3.pdf"],
+      "reference_answer": "It changed from 1 day per week (v1.0, 2024) to 3 days per week (v2.0, 2025) and then to 2 days per week (v3.0, 2026).",
+      "tag": "history"
+    }
+  ]
+}
